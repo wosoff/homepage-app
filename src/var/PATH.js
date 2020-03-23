@@ -7,7 +7,7 @@ module.exports = (() => {
   return {
     TEMPLATE: {
       INDEX: resolve(VIEWS, 'index-view', TEMPLATE, 'index.html'),
-      HOME: resolve(VIEWS, 'home-view', TEMPLATE, 'home.html'),
+      HOME: resolve(VIEWS, 'home', TEMPLATE, 'home.html'),
     },
   };
 })();

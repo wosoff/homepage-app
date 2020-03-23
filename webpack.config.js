@@ -5,9 +5,9 @@ const CopyPlugin = require('copy-webpack-plugin')
 module.exports = {
   mode: 'development',
   entry: {
-    indexView: resolve(__dirname, 'src', 'views', 'index-view', 'index-view.js'),
-    homeView: resolve(__dirname, 'src', 'views', 'home-view', 'home-view.js'),
-    testView: resolve(__dirname, 'test', 'test.js')
+    // indexView: resolve(__dirname, 'src', 'views', 'index-view', 'index-view.js'),
+    home: resolve(__dirname, 'src', 'views', 'home', 'home_main.js'),
+    // testView: resolve(__dirname, 'test', 'test.js')
   },
   output: {
     filename: '[name].bundle.js',

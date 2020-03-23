@@ -3,7 +3,7 @@ const homeRoutes = require('./home-routes/home-routes');
 const portfolioRoutes = require('./portfolio-routes/portfolio-routes')
 
 module.exports = [
-  ...indexRoutes,
+  // ...indexRoutes,
   ...homeRoutes,
-  ...portfolioRoutes
+  // ...portfolioRoutes
 ];

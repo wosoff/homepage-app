@@ -1,0 +1,21 @@
+header
+  position: fixed
+  top: 0
+  width: 100%
+  transform: translateY(-100%)
+  // transition: mdc-exit-temporary(transform, "300ms"), opacity 0s "300ms"
+  // opacity: 0
+  background-color: #212121
+  // background-color: var(--mdc-theme-primary, #212121)
+  display: flex
+  justify-content: space-between
+  height: 112px
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5)
+  z-index: 4
+
+  @media screen and (min-width: 921px)
+    height: 72px
+
+.show
+  transform: translateY(0%)
+  
