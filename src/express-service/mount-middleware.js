@@ -7,7 +7,7 @@ const session = require("express-session")
 const morgan = require('morgan');
 const { format } = require('./var/morgan-options');
 /**
- * @param {object} app
+ * @param {import('express').Application} app
  */
 function mountMiddleware(app) {
   app.use(express.static('dist'));

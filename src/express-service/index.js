@@ -21,7 +21,7 @@ const ExpressService = (() => {
     listenHTTP: innerListenHTTP,
     listenHTTPS: innerListenHTTPS,
     addRoutes: innerAddRoutes,
-    useRouterModule: innerUseRouter,
+    mountChildRouter: innerUseRouter,
   };
 })();
 

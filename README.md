@@ -1,3 +1,6 @@
+css shadow를 넣을때는 클릭해야하는 입체감있는 아이콘일때만
+나머진 심플하게 1차원으로
+
 .nav-link
   // responsive; laptop => changing padding
   @media screen and (min-width: 921px)
@@ -8,6 +11,9 @@
 ----
 
 How layout?
+  display: flex
+  flex-direction: column
+  min-height: 100%
 
 <Parent>
 padding ( outline ) (**why padding? Because It controls outline of only one elements)
@@ -31,3 +37,6 @@ padding ( outline ) (**why padding? Because It controls outline of only one elem
 
     <final child;the target>
      ---------------- img: width: 100%
+
+
+about 부터는 스스로 도전해보고 안되면 카피하라!

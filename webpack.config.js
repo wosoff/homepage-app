@@ -1,3 +1,10 @@
+const VIEWS = {
+  HOME: 'views-home',
+  ABOUT: 'views-about',
+  PORTFOLIO: 'views-portfolio',
+  TECH: 'views-tech'
+}
+
 const {resolve} = require('path');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin')
@@ -5,8 +12,11 @@ const CopyPlugin = require('copy-webpack-plugin')
 module.exports = {
   mode: 'development',
   entry: {
-    // indexView: resolve(__dirname, 'src', 'views', 'index-view', 'index-view.js'),
-    home: resolve(__dirname, 'src', 'views', 'home', 'home_main.js'),
+
+    portfolio: resolve(__dirname, 'src', VIEWS.PORTFOLIO, 'index', 'portfolio.index.js'),
+    home: resolve(__dirname, 'src', VIEWS.HOME, 'index', 'home.index.js'),
+    tech: resolve(__dirname, 'src', VIEWS.TECH, 'index', 'tech.index.js'),
+
     // testView: resolve(__dirname, 'test', 'test.js')
   },
   output: {
