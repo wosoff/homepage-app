@@ -1,3 +1,5 @@
+flex wrap basis max-width study
+---
 css shadow를 넣을때는 클릭해야하는 입체감있는 아이콘일때만
 나머진 심플하게 1차원으로
 

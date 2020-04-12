@@ -1,6 +1,6 @@
-import './style/main.sass'
-import React from 'react'
-import TitleSection from '../title-section/title-section'
+import './style/main.sass';
+import React from 'react';
+import TitleSection from '../title-section/title-section';
 
 export default function AboutMain() {
   return (
@@ -11,25 +11,25 @@ export default function AboutMain() {
           <p>In this here, portfolio page and Watch Contents!</p>
         </div>
         <section className="main-section">
-          <TitleSection 
+          <TitleSection
             titleSectionHref="/about"
             titleImgSrc="/public/assets/img/dummy-tech-ratio-2-1.png"
             titleHeader="Material Design guidelines"
             titleDescription="Material Design principles, styles, and best practices"
           />
-            <TitleSection 
+          <TitleSection
             titleSectionHref="/about"
             titleImgSrc="/public/assets/img/dummy-tech-ratio-2-1.png"
             titleHeader="Material Design guidelines"
             titleDescription="Material Design principles, styles, and best practices"
           />
-           <TitleSection 
+          <TitleSection
             titleSectionHref="/about"
             titleImgSrc="/public/assets/img/dummy-tech-ratio-2-1.png"
             titleHeader="Material Design guidelines"
             titleDescription="Material Design principles, styles, and best practices"
           />
-           <TitleSection 
+          <TitleSection
             titleSectionHref="/about"
             titleImgSrc="/public/assets/img/dummy-tech-ratio-2-1.png"
             titleHeader="Material Design guidelines"
@@ -38,5 +38,5 @@ export default function AboutMain() {
         </section>
       </div>
     </main>
-  )
+  );
 }

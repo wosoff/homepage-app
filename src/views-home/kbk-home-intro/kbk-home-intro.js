@@ -1,26 +1,28 @@
-import './style/kbk-home-intro.sass'
-import React from 'react'
+import './style/kbk-home-intro.sass';
+import React from 'react';
 
 // kbk-homepage-hero at mio
 export default function KbkHomeIntro() {
   return (
-    <div 
+    <div
       // className="_nghost-stf-c6" // at mio
       className="kbk-home-intro"
-      role="Homepage Introduction">
-      <section 
+    >
+      <section
         // className="_ngcontent-dtm-c6" // at mio
         className="kbk-home-intro-section"
       >
-        <div 
+        <div
           // className="mio-homepage-hero--container" // at mio
           className="kbk-home-intro-content"
         >
           <p>
-            Material is a design system – backed by open-source code – that helps teams build high-quality digital experiences.
+            Material is a design system – backed by open-source code – that helps
+            <br />
+            teams build high-quality digital experiences.
           </p>
         </div>
       </section>
     </div>
-  )
+  );
 }

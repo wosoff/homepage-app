@@ -1,5 +1,5 @@
 const { respondIndexPost } = require('./home-middleware');
-const aboutRoutes = require('../portfolio-routes/portfolio-routes')
+const aboutRoutes = require('../portfolio-routes/portfolio-routes');
 
 module.exports = [
   {
@@ -9,5 +9,5 @@ module.exports = [
       respondIndexPost,
     ],
   },
-  ...aboutRoutes
+  ...aboutRoutes,
 ];

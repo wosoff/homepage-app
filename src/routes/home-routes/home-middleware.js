@@ -3,8 +3,8 @@ const util = require('util');
 const { TEMPLATE } = require('../../var/PATH');
 
 /**
- * @param {import('express').Request} req 
- * @param {import('express').Response} res 
+ * @param {import('express').Request} req
+ * @param {import('express').Response} res
  */
 exports.respondIndexPost = function respondIndexPost(req, res) {
   util.promisify(fs.readFile)(

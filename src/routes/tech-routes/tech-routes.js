@@ -3,8 +3,8 @@ const util = require('util');
 const { TEMPLATE } = require('../../var/PATH');
 
 /**
- * @param {import('express').Request} req 
- * @param {import('express').Response} res 
+ * @param {import('express').Request} req
+ * @param {import('express').Response} res
  */
 function respond(req, res) {
   util.promisify(fs.readFile)(
@@ -21,14 +21,14 @@ function respond(req, res) {
     }).catch((err) => {
       console.log(err);
     });
-};
+}
 
 module.exports = [
   {
     method: 'get',
     path: '/tech',
     middleware: [
-      respond
+      respond,
     ],
   },
 ];
