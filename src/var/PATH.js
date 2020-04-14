@@ -9,6 +9,7 @@ module.exports = (() => {
   return {
     TEMPLATE: {
       ROOT: resolve(VIEW, 'kbk-root', TEMPLATE, 'kbk-root.html'),
+      COMMON: resolve(VIEW, 'common-root', TEMPLATE, 'common-root.html'),
       PORTFOLIO: resolve(VIEWS_PORTFOLIO, 'portfolio_app', TEMPLATE, 'portfolio.html'),
       TECH: resolve(VIEWS_TECH, 'tech_app', TEMPLATE, 'tech.html'),
     },

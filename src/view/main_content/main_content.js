@@ -1,15 +1,13 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import './style/main_content.sass';
-import React, { useEffect } from 'react';
-import appendHTMLComment from '../../helpers/append-html-comment';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 /**
- * @param {React.ComponentType[]} children
- * @returns {React.ComponentType}
+ * @param {{ children: React.ReactChild[]; cssPrps?: React.CSSProperties}} props
  */
-export default (...children) => () => {
-  useEffect(() => {
-    appendHTMLComment('#main_content', '');
-  });
+export default function MainContent(props) {
+  const { children, cssPrps } = props;
 
   return (
     <>
@@ -18,9 +16,19 @@ export default (...children) => () => {
         className="main"
         id="main_content"
         role="main"
+        style={{ ...cssPrps }}
       >
-        { children.map((C) => (<C key={C.name} />)) }
+        {children}
       </main>
     </>
   );
+}
+
+MainContent.propTypes = {
+  children: PropTypes.arrayOf(PropTypes.element).isRequired,
+  cssPrps: PropTypes.objectOf(PropTypes.string),
+};
+
+MainContent.defaultProps = {
+  cssPrps: {},
 };

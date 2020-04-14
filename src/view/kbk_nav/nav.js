@@ -46,8 +46,8 @@ export default function Nav() {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/contact" aria-label="Design" target="_self">
-              Contact
+            <a className="nav-link" href="/history" aria-label="Design" target="_self">
+              History
               <span className="nav-indicator" />
             </a>
           </li>

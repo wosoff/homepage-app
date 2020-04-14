@@ -1,14 +1,19 @@
 import './style/page-title-group.sass';
 import React from 'react';
-import PAGE_TITLE_DATA from '../../var/VIEW_PAGE_TITLE_DATA';
+import PropTypes from 'prop-types';
 import PageTitle from '../page-title/page-title';
 
-export default function PageTitleGroup() {
+/**
+ * @param {{ pageTitleData: Array<any>; }} props
+ */
+export default function PageTitleGroup(props) {
+  const { pageTitleData } = props;
+
   return (
     <div className="page-title-group">
       <div className="page-title-group--display-flex">
         {
-          PAGE_TITLE_DATA.map((data) => {
+          pageTitleData.map((data) => {
             const {
               OPT_KEY_NAME,
               TITLE_URL,
@@ -33,6 +38,9 @@ export default function PageTitleGroup() {
   );
 }
 
+PageTitleGroup.propTypes = {
+  pageTitleData: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 
 //  // <div className="mio-multi-up_ngcontent-dtm-c5"> // at mio
 //  <div className="page-title-group">

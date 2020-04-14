@@ -14,6 +14,7 @@ module.exports = {
   entry: {
 
     portfolio: resolve(__dirname, 'src', VIEW.PORTFOLIO, 'index', 'portfolio.index.js'),
+    'common-root': resolve(__dirname, 'src', 'view', 'common-root', 'common-root.js'),
     'kbk-root': resolve(__dirname, 'src', 'view', 'kbk-root', 'kbk-root.js'),
     tech: resolve(__dirname, 'src', VIEW.TECH, 'index', 'tech.index.js'),
 

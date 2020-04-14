@@ -1,26 +1,18 @@
 // @ts-nocheck
 /**
  * @param {string} queryToSelect
- * @param {string} msg
+ * @param {number} count // a number of appending
  */
-export default function appendHTMLComment(queryToSelect, msg) {
+export default function appendDividingComment(queryToSelect, count) {
   if (document.querySelector(queryToSelect) === null) {
     throw new Error(`Selected element is null that element id:${queryToSelect} is invalid ID`);
   }
 
-  const parentElem = document.querySelector(queryToSelect);
-  const { children, lastElementChild } = parentElem;
+  const createComment = () => document.createComment('');
 
-  const createHTMLComment = () => document.createComment(msg);
-  // eslint-disable-next-line no-restricted-syntax
-  for (const child of children) {
-    if (child === lastElementChild) {
-      break;
-    }
+  const elemToAppend = document.querySelector(queryToSelect);
 
-    child.after(createHTMLComment());
-    child.after(createHTMLComment());
-    child.after(createHTMLComment());
-    child.after(createHTMLComment());
+  for (let i = 0; i < count; i += 1) {
+    elemToAppend.after(createComment());
   }
 }

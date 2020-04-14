@@ -8,7 +8,7 @@ const { TEMPLATE } = require('../../var/PATH');
  */
 function respond(req, res) {
   util.promisify(fs.readFile)(
-    TEMPLATE.TECH,
+    TEMPLATE.COMMON,
     // It must use option utf8. if it must not, browser downs page.
     { encoding: 'utf8' },
   )
@@ -26,7 +26,28 @@ function respond(req, res) {
 module.exports = [
   {
     method: 'get',
+    path: '/about',
+    middleware: [
+      respond,
+    ],
+  },
+  {
+    method: 'get',
+    path: '/portfolio',
+    middleware: [
+      respond,
+    ],
+  },
+  {
+    method: 'get',
     path: '/tech',
+    middleware: [
+      respond,
+    ],
+  },
+  {
+    method: 'get',
+    path: '/history',
     middleware: [
       respond,
     ],

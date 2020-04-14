@@ -1,10 +1,7 @@
-const homeRoutes = require('./home-routes/home-routes');
-const portfolioRoutes = require('../../__temp/portfolio-routes/portfolio-routes');
-const techRoutes = require('./tech-routes/tech-routes');
+const mainMenuRoutes = require('./main-menu-page-routes/main-menu-page-routes');
+const kbkHomeRoutes = require('./kbk-home-routes/kbk-home-routes');
 
 module.exports = [
-  // ...indexRoutes,
-  ...homeRoutes,
-  ...portfolioRoutes,
-  ...techRoutes,
+  ...kbkHomeRoutes,
+  ...mainMenuRoutes,
 ];

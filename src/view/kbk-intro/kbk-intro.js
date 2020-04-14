@@ -1,8 +1,13 @@
 import './style/kbk-intro.sass';
-import React from 'react';
+import React, { useEffect } from 'react';
+import appendDividingComment from '../../helpers/append-html-comment';
 
 // kbk-homepage-hero at mio
 export default function KbkHomeIntro() {
+  useEffect(() => {
+    appendDividingComment('.kbk-intro', 4);
+  });
+
   return (
     <div
       // className="_nghost-stf-c6" // at mio
