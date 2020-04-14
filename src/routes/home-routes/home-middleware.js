@@ -8,7 +8,7 @@ const { TEMPLATE } = require('../../var/PATH');
  */
 exports.respondIndexPost = function respondIndexPost(req, res) {
   util.promisify(fs.readFile)(
-    TEMPLATE.HOME,
+    TEMPLATE.ROOT,
     // It must use option utf8. if it must not, browser downs page.
     { encoding: 'utf8' },
   )

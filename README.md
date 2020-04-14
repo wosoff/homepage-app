@@ -1,3 +1,16 @@
+20200413
+
+It should solve hoc in src/main_conten/main_content.js
+---
+20200412
+
+Tommorow, 
+It have to decide how send paramters, which are link, url to img of title, the component of each page title
+
+It maybe use array type...
+
+---
+
 flex wrap basis max-width study
 ---
 css shadow를 넣을때는 클릭해야하는 입체감있는 아이콘일때만

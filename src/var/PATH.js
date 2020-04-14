@@ -1,18 +1,16 @@
 const { resolve, join } = require('path');
 
 module.exports = (() => {
-  const VIEWS_HOME = join('src', 'views-home');
-  const VIEWS_PORTFOLIO = join('src', 'views-portfolio');
-  const VIEWS_TECH = join('src', 'views-tech');
-  // const VIEWS_ABOUT = join('src', 'views-about');
-  const INDEX = 'index';
+  const VIEW = join('src', 'view');
+  const VIEWS_PORTFOLIO = join('src', 'view_portfolio');
+  const VIEWS_TECH = join('src', 'view_tech');
   const TEMPLATE = 'template';
 
   return {
     TEMPLATE: {
-      HOME: resolve(VIEWS_HOME, INDEX, TEMPLATE, 'home.html'),
-      PORTFOLIO: resolve(VIEWS_PORTFOLIO, INDEX, TEMPLATE, 'portfolio.html'),
-      TECH: resolve(VIEWS_TECH, INDEX, TEMPLATE, 'tech.html'),
+      ROOT: resolve(VIEW, 'kbk-root', TEMPLATE, 'kbk-root.html'),
+      PORTFOLIO: resolve(VIEWS_PORTFOLIO, 'portfolio_app', TEMPLATE, 'portfolio.html'),
+      TECH: resolve(VIEWS_TECH, 'tech_app', TEMPLATE, 'tech.html'),
     },
   };
 })();

@@ -1,8 +1,8 @@
-const VIEWS = {
-  HOME: 'views-home',
-  ABOUT: 'views-about',
-  PORTFOLIO: 'views-portfolio',
-  TECH: 'views-tech'
+const VIEW = {
+  HOME: 'view_home',
+  ABOUT: 'view_about',
+  PORTFOLIO: 'view_portfolio',
+  TECH: 'view_tech'
 }
 
 const {resolve} = require('path');
@@ -13,9 +13,9 @@ module.exports = {
   mode: 'development',
   entry: {
 
-    portfolio: resolve(__dirname, 'src', VIEWS.PORTFOLIO, 'index', 'portfolio.index.js'),
-    home: resolve(__dirname, 'src', VIEWS.HOME, 'index', 'home.index.js'),
-    tech: resolve(__dirname, 'src', VIEWS.TECH, 'index', 'tech.index.js'),
+    portfolio: resolve(__dirname, 'src', VIEW.PORTFOLIO, 'index', 'portfolio.index.js'),
+    'kbk-root': resolve(__dirname, 'src', 'view', 'kbk-root', 'kbk-root.js'),
+    tech: resolve(__dirname, 'src', VIEW.TECH, 'index', 'tech.index.js'),
 
     // testView: resolve(__dirname, 'test', 'test.js')
   },
